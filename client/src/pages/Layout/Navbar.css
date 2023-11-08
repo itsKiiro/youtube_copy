@@ -1,0 +1,120 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 180px;
+}
+
+.logoImg {
+    width: 140px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.searchBar {
+    display: flex;
+    width: 40%;
+}
+
+.searchInput {
+    width: 100%;
+    height: 27px;
+    font-weight: bold;
+    font-size: large;
+    background-color: #1a1a1a;
+    padding: 7px;
+    padding-left: 17px;
+    border-color: white;
+    border-right-color: black;
+    color: white;
+    border-top-left-radius: 21px;
+    border-bottom-left-radius: 21px;
+}
+
+.searchButton {
+    background-color: #2f2d2dcf;
+    width: 17%;
+    border-color: white;
+    border-left-color: black;
+    border-top-right-radius: 21px;
+    border-bottom-right-radius: 21px;
+}
+
+    .searchButton:hover {
+        cursor: pointer;
+        background-color: aliceblue;
+    }
+
+.searchImg {
+    width: 40px;
+    height: 30px;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.customIcon {
+    border-radius: 100%;
+    padding: 7px;
+}
+
+    .customIcon:hover {
+        background-color: #2f2d2dcf;
+        cursor: pointer;
+    }
+
+
+.customIcon.mobile {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .customIcon.mobile {
+        display: block;
+    }
+
+    .searchBar {
+        display: none;
+    }
+
+    .mobileSearchBar {
+        background-color: black;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        margin-left: -14px;
+        top: 0;
+    }
+
+    .mobileSearchContainer {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .mobileSearchInput {
+        width: 80%;
+        margin-left: 7px;
+        margin-right: 10px;
+        background-color: #1a1a1a;
+        padding: 7px;
+        border-radius: 14px;
+        border: none;
+        color: white;
+        padding-left: 11px;
+    }
+
+    .customIcon.mobileMenu {
+        display: none;
+    }
+}

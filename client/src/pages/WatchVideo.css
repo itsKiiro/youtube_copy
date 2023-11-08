@@ -1,0 +1,295 @@
+.WatchVideo {
+    padding-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 4.7%;
+    display: flex;
+}
+
+.video {
+    width: 67%;
+}
+
+.description {
+    background-color: #2f2d2dcf;
+    border-radius: 7px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+    .description:hover {
+        background-color: #393737cf;
+    }
+
+.commentHeader {
+    display: flex;
+    align-items: center;
+}
+
+.commentLength {
+    margin-right: 57px;
+}
+
+.sortComments {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.commentInput {
+    background-color: #1a1a1a;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 90%;
+    color: white;
+    padding: 1%;
+    font-size:medium;
+}
+
+.commentButtons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4px;
+    align-items: center;
+    gap: 27px;
+}
+
+.commentButton {
+    height: 50%;
+    border-radius: 17px;
+    padding: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+.clearButton {
+    border-radius: 17px;
+    padding: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.clearButton:hover {
+    cursor: pointer;
+    background-color: #393737cf;
+}
+
+.commentOutputSection {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.commentOutput {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentLikes {
+    display: flex;
+    gap: 7px;
+}
+
+.like {
+    padding: 8px;
+    border-radius: 50%;
+}
+
+    .like:hover {
+        background-color: #393737cf;
+        cursor: pointer;
+    }
+
+.infoBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.aboButton {
+    margin-left: 24px;
+    padding: 7px;
+    border-radius: 17px;
+    padding-left: 27px;
+    padding-right: 27px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #3d3b3bcf;
+    margin-right: 30%;
+    color: white;
+}
+
+    .aboButton:hover, .likeButton:hover, .dislikeButton:hover, .shareButton:hover {
+        background-color: #888181cf;
+    }
+
+.uploaderInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}    
+
+.uploaderName, .uploaderSubscriberCount {
+    margin: 0;
+}
+
+.uploaderName {
+    cursor: pointer;
+}
+
+.uploaderSubscriberCount {
+    font-size: small;
+}
+
+.commentContainer {
+    display: flex;
+}
+
+.commentUsername {
+    font-weight: 500;
+}
+
+.commentAvatar {
+    margin-right: 14px;
+}
+
+.likeButton {
+    margin-left: 24px;
+    padding: 6px;
+    border-radius: 17px;
+    padding-left: 27px;
+    padding-right: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #3d3b3bcf;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+}
+
+.dislikeButton {
+    padding: 5px;
+    border-radius: 17px;
+    padding-left: 20px;
+    padding-right: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #3d3b3bcf;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.shareButton {
+    padding: 6px;
+    border-radius: 17px;
+    padding-left: 15px;
+    padding-right: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #3d3b3bcf;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 7px;
+}
+
+.likeCount {
+    padding-left: 20px;
+    color: white;
+}
+
+.thumbnailSmall {
+    width: 40%;
+    height: 115px;
+    border-radius: 14px;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+.videoPackageSmall {
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+.videoSmall {
+    display: flex;
+}
+
+.videoColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nextVideosLoading {
+    padding: 17px;
+}
+
+
+@media (max-width: 800px) {
+    .WatchVideo {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 17px;
+    }
+
+    video {
+        width: 100%;
+        height: 25%;
+    }
+
+    .videoDivContainer {
+        width: 100vw;
+    }
+
+    .aboButton {
+        margin: 0;
+    }
+
+    .uploaderInfo {
+        display: none;
+    }
+
+    .shareButton {
+        display: none;
+    }
+
+    .infoBox {
+        padding-left: 14px;
+    }
+
+    .mobileVideoTitle {
+        padding-left: 14px;
+    }
+
+    .commentSection {
+        display: none;
+    }
+
+    .videoPackageSmall {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .thumbnailSmall {
+        width: 100%;
+        margin: 0;
+        height: 180px;
+    }
+
+    .description {
+        margin-bottom: 17px;
+    }
+
+    .mobileTitleSmall {
+        padding-left: 10px;
+    }
+
+    .mobileUserSmall {
+        margin: 0;
+    }
+}

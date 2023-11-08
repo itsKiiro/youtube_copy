@@ -1,0 +1,11 @@
+body {
+    color: white;
+}
+
+.userInformation {
+    margin-left: 4%;
+}
+
+@media (max-width: 800px) {
+    
+}

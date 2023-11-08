@@ -1,0 +1,32 @@
+.VideoUpload {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 50px;
+    gap: 17px;
+}
+
+.uploadButton {
+    cursor: pointer;
+    width: 25%;
+    border-radius: 14px;
+    padding: 4px;
+}
+
+.uploadInput {
+    padding: 4px;
+    border-radius: 4px;
+}
+
+@media (max-width: 800px) {
+    .VideoUpload {
+        width: 80%;
+        padding: 0;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .uploadButton {
+        width: 100%;
+    }
+}

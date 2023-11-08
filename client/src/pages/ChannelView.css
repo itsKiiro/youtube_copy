@@ -1,0 +1,77 @@
+.channelThumbnail {
+    width: 170px;
+    border-radius: 5%;
+}
+
+.channelVideoTitle {
+    margin: 0;
+}
+
+.ChannelView {
+    display: flex;
+}
+
+.channelVideos {
+    margin-left: 10%;
+    overflow: auto;
+    width: 80%;
+}
+
+.channelVideoHeader {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.channelHR {
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+
+.channelVideoScroll {
+    display: flex;
+    gap: 17px;
+}
+
+.videoTitle {
+    width: 170px;
+}
+
+.channelVideosSection {
+    width: 80%;
+}
+
+.mobileChannelSubButtonContainer {
+    display: none;
+}
+
+.mobileChannelNameContainer {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .channelVideosSection {
+        width: 100%;
+    }
+
+    .channelVideoTitle {
+        font-size: smaller;
+    }
+
+    .mobileChannelSubButtonContainer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .mobileChannelSubButton {
+        width: 80%;
+        border-radius: 17px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    .mobileChannelNameContainer {
+        display: flex;
+        justify-content: center;
+    }
+}
